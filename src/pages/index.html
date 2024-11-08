@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="/src/js/common/include.js" defer></script>
+    <script src="https://kit.fontawesome.com/7a044dc0c5.js" crossorigin="anonymous"></script>
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <!-- Logo -->
+        <a href="#" aria-label="Home">
+          <img
+            src="/src/assets/images/logos/logo.svg"
+            alt="Logo da Eleve"
+            class="h-20 w-auto"
+          />
+        </a>
+    
+        <!-- Botão do Menu Sanduíche -->
+        <button
+          id="menuButton"
+          class="text-gray-800 focus:outline-none lg:hidden"
+          aria-label="Abrir menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+    
+        <nav class="hidden lg:flex space-x-6">
+          <a href="#" class="hover:text-gray-400">Consectetur</a>
+          <a href="#" class="hover:text-gray-400">Itaque</a>
+          <a href="#" class="hover:text-gray-400">Deserunt</a>
+          <a href="#" class="hover:text-gray-400">Doloribus</a>
+        </nav>
+      </div>
+    
+      <!-- Menu deslizante off-canvas -->
+      <aside
+        id="mobileMenu"
+        class="fixed inset-y-0 right-0 w-2/3 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50"
+      >
+        <!-- Botão de fechar -->
+        <button
+          id="closeMenuButton"
+          class="p-4 text-gray-800"
+          aria-label="Fechar menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+    
+        <!-- Navegação principal -->
+        <nav class="flex flex-col items-start p-6 space-y-4 text-gray-800">
+          <a href="#" class="text-lg font-semibold">Consectetur</a>
+          <a href="#" class="text-lg font-semibold">Itaque</a>
+          <a href="#" class="text-lg font-semibold">Deserunt</a>
+          <a href="#" class="text-lg font-semibold">Doloribus</a>
+    
+          <!-- Cadastro e Início de Sessão -->
+          <footer class="mt-auto pt-6 border-t border-gray-200 w-full">
+            <a href="#" class="block text-sm font-medium text-gray-600"
+              >Cadastre-se</a
+            >
+            <a href="#" class="block text-sm font-medium text-gray-600"
+              >Iniciar sessão</a
+            >
+          </footer>
+        </nav>
+      </aside>
+    </header>
+    
+    <main>
+      <section class="relative w-full h-screen overflow-hidden">
+        <!-- Vídeo de fundo -->
+        <video
+          id="background-video"
+          class="absolute inset-0 w-full h-full object-cover"
+          muted
+          loop
+          playsinline
+          autoplay
+        >
+          <source src="/src/assets/videos/test.mp4" type="video/mp4" />
+          <source src="/src/assets/videos/test.webm" type="video/webm" />
+          <source src="/src/assets/videos/test.ogv" type="video/ogg" />
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+
+        <div class="absolute inset-0 bg-black opacity-30 z-0"></div>
+
+        <!-- Call to Action -->
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10"
+        >
+          <div class="text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4 text-white-700">
+              Lorem ipsum dolor
+            </h1>
+            <p class="text-lg sm:text-xl mb-6 text-white-700">
+              Quasi est itaque, omnis hic commodi quod vel deserunt voluptate saepe dicta doloribus.
+            </p>
+            <a
+              href="#"
+              class="bg-blue-600 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-500 transition-colors"
+              >Button</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 px-4 bg-gray-100">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Quibusdam corrupti</h2>
+          <div class="swiper-container overflow-hidden relative">
+            <div class="swiper-wrapper">
+
+              <!-- Card 1 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <img src="" alt="" class="w-full h-64 object-cover rounded-lg mb-4" />
+                  <h3 class="text-xl font-semibold mb-2">Omnis</h3>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="text-blue-600 hover:underline">Link</a>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <img src="" alt="" class="w-full h-64 object-cover rounded-lg mb-4" />
+                  <h3 class="text-xl font-semibold mb-2">Dicta</h3>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="text-blue-600 hover:underline">Link</a>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <img src="" alt="" class="w-full h-64 object-cover rounded-lg mb-4" />
+                  <h3 class="text-xl font-semibold mb-2">Adipisicing</h3>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="text-blue-600 hover:underline">Link</a>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <img src="" alt="" class="w-full h-64 object-cover rounded-lg mb-4" />
+                  <h3 class="text-xl font-semibold mb-2">Doloribus</h3>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="text-blue-600 hover:underline">Link</a>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <img src="" alt="" class="w-full h-64 object-cover rounded-lg mb-4" />
+                  <h3 class="text-xl font-semibold mb-2">Deserunt</h3>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="text-blue-600 hover:underline">Link</a>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-prev "></div>
+            <div class="swiper-button-next "></div>
+        </div>
+      </section>
+      
+
+      <section class="py-16 px-4">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Adipisicing elit</h2>
+
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="relative bg-cover bg-center h-72 rounded-lg bg-slate-900">
+              <a href="#" class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-2xl font-bold hover:bg-red-600 hover:bg-opacity-30">
+                Omnis Hic
+              </a>
+            </div>
+
+            <div class="relative bg-cover bg-center h-72 rounded-lg bg-slate-900">
+              <a href="#" class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-2xl font-bold hover:bg-red-600 hover:bg-opacity-30">
+                Vel Deserunt
+              </a>
+            </div>
+
+            <div class="relative bg-cover bg-center h-72 rounded-lg bg-slate-900">
+              <a href="#" class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-2xl font-bold hover:bg-red-600 hover:bg-opacity-30">
+                Aepe Dicta
+              </a>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </section>
+    </main>
+
+    <div data-include="/src/components/footer.html"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/src/js/components/swiper.js"></script>
+    <script src="/src/js/components/background-video.js"></script>
+    <script src="/src/js/components/menu.js"></script>
+  </body>
+</html>
