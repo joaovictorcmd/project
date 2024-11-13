@@ -1,0 +1,49 @@
+<header class="fixed top-0 left-0 w-full bg-background-dark shadow-md z-50">
+    <div class="container mx-auto flex items-center justify-between p-4">
+        <a href="/src/pages/index.html" aria-label="Home"
+            class="self-start text-white hover:text-secondaryText hover:active:text-linkColor">
+            <img src="/src/assets/images/logos/logo.svg" alt="" class="h-16 w-auto">
+        </a>
+        <button id="menuButton" class="text-background-light focus:outline-none md:hidden transform"
+            aria-label="Abrir menu">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </button>
+        <nav
+            class="hidden md:flex text-base lg:text-lg space-x-6 text-text-secondary font-Montserrat uppercase font-bold">
+            <a href="/src/pages/products-men.html" class="relative group active:text-text-muted">Masculino
+                <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-background-light transition-all duration-200 group-hover:w-full"></span>
+            </a>
+            <a href="/src/pages/products-women.html" class="relative group active:text-text-muted">Feminino
+                <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-background-light transition-all duration-200 group-hover:w-full"></span>
+            </a>
+            <a href="/src/pages/products-acessories.html" class="relative group active:text-text-muted">Acessórios
+                <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-background-light transition-all duration-200 group-hover:w-full"></span>
+            </a>
+        </nav>
+    </div>
+    <aside id="mobileMenu"
+        class="fixed inset-y-0 right-0 w-2/3 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <nav class="h-full flex flex-col py-8 text-lg font-semibold">
+            <header class="mb-8">
+                <button id="closeMenuButton" class="scale-150 px-4 text-gray-800" aria-label="Fechar menu">
+                    <i class="fa-solid fa-xmark fa-xl"></i>
+                </button>
+            </header>
+            <main class="flex flex-col flex-1">
+                <a href="/src/pages/products-men.html"
+                    class="p-5 border-t-2 hover:bg-neutral-100  active:bg-neutral-50">Masculino</a>
+                <a href="/src/pages/products-women.html" class="p-5 border-t-2 hover:bg-neutral-100  active:bg-neutral-50">Feminino</a>
+                <a href="/src/pages/products-acessories.html" class="p-5 border-t-2 hover:bg-neutral-100  active:bg-neutral-50">Acessórios</a>
+            </main>
+            <footer class="p-5 flex gap-2 items-center text-sm">
+                <i class="fa-solid fa-user"></i>
+                <a href="#" class="hover:underline">Iniciar sessão</a>
+                <span>|</span>
+                <a href="#" class="hover:underline">Cadastre-se</a>
+            </footer>
+        </nav>
+    </aside>
+</header>
